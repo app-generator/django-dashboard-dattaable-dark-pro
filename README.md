@@ -19,6 +19,7 @@
 ## Dashboard Links
 
 - [Django DattaAble Dark PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-dark-pro) - Product page
+- [Django DattaAble Dark PRO](https://docs.appseed.us/admin-dashboards/django-dashboard-dattaable-dark-pro/) - Documentation
 - [Django DattaAble Dark PRO](https://django-dashboard-dattaable-dark-pro.appseed.us/) - LIVE demo
 
 <br />
@@ -83,37 +84,53 @@ The boilerplate code is built with a modular structure that follows the recommen
 <br />
 
 ```bash
-< PROJECT ROOT >                               # application root folder
+< PROJECT ROOT >                                       # Application root folder
     |
-    |--- core/__init__.py                      # Handles the core features
-    |--- core/                                 # define app settings and serve statis assets and pages
+    |--- core/__init__.py                              # Handles the core features
+    |--- core/                                         # Defines app settings and serve statis assets and pages
     |      | --- <templates>
-    |      |        |---<includes>             # Page chunks, components
-    |      |        |---<layouts>              # App Layouts (the master pages)
-    |      |        |---<account>              # Auth Pages (login, register)
-    |      |        |---<pages>                # App Pages
+    |      |        |---<includes>                     # Page chunks, components
+    |      |        |       |                     
+    |      |        |       | --- navigation.html      # Top bar             
+    |      |        |       | --- sidebar.html         # Left sidebar                
+    |      |        |       | --- scripts.html         # JS scripts common to all pages            
+    |      |        |       
+    |      |        |---<layouts>                      # App Layouts (the master pages)
+    |      |        |       |
+    |      |        |       | --- base.html            # Used by common pages like index, UI ..             
+    |      |        |       | --- base-fullscreen.html # Used by auth pages (login, register)             
+    |      |        |       
+    |      |        |---<accounts>                     # Auth Pages (login, register)
+    |      |        |       |
+    |      |        |       | --- login.html           # Use layout `base-fullscreen.html`
+    |      |        |       | --- register.html        # Use layout `base-fullscreen.html`       
+    |      |        | 
+    |      |     index.html            # The default page              
+    |      |     error-404.html        # Error 404 page (page not found)
+    |      |     error-500.html        # Error 500 page (server error)
+    |      |     *.html                # All other pages provided by the UI Kit 
     |      |
     |      | --- views.py
     |      | --- urls.py
     |      | --- models.py
     |
-    |--- app/__init__.py                       # Django app that serve the pages
-    |--- app/                                  # for authenticated users
+    |--- app/__init__.py               # Django app that serve the pages
+    |--- app/                          # for authenticated users
     |      | --- views.py
     |      | --- urls.py
     |      | --- models.py
     |
-    |--- authentication/__init__.py            # Django app that serve the pages
-    |--- authentication/                       # for authenticated users
-    |      | --- forms.py                      # Login, Register forms
+    |--- authentication/__init__.py    # Django app that serve the pages
+    |--- authentication/               # for authenticated users
+    |      | --- forms.py              # Login, Register forms
     |      | --- views.py
     |      | --- urls.py
     |      | --- models.py
     |
-    |--- requirements.txt                      # Requirements - SQLite storage
+    |--- requirements.txt              # Requirements - SQLite storage
     |
-    |--- manage.py                             # bootstrap the app
-    |
+    |--- manage.py                     # Bootstrap the app 
+    |                                  
     |-----------------------------
 ```
 
@@ -153,6 +170,8 @@ $ # python manage.py runserver 0.0.0.0:<your_port>
 $
 $ # Access the web app in browser: http://127.0.0.1:8000/
 ```
+
+> Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages. 
 
 <br />
 
