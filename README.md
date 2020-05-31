@@ -1,4 +1,4 @@
-# [Django Dashboard DattaAble PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-dark-pro)
+# [Django DattaAble Dark PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-dark-pro)
 
 > Commercial product - **Django Dashboard** coded on top of **DattaAble PRO** crafted by **CodedThemes** - Features:
 
@@ -12,8 +12,8 @@
 
 > Links
 
-- [Django Dashboard DattaAble PRO](https://django-dashboard-dattaable-dark-pro.appseed.us/) - LIVE Demo
-- [Django Dashboard DattaAble PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-dark-pro) - Official product page
+- [Django DattaAble Dark PRO](https://django-dashboard-dattaable-dark-pro.appseed.us/) - LIVE Demo
+- [Django DattaAble Dark PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-dark-pro) - Official product page
 - More [Django Admin Dashboards](https://appseed.us/admin-dashboards/django) - index hosted by **[AppSeed](https://appseed.us)**
 - [Open-Source Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **[AppSeed](https://appseed.us)**
 
@@ -202,4 +202,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Django Dashboard DattaAble PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-dark-pro) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Django DattaAble Dark PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-dark-pro) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
